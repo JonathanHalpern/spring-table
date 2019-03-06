@@ -1,7 +1,8 @@
 # Spring Table
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-It uses [React Spring](https://github.com/react-spring/react-spring) for transition
+
+It uses [React Spring](https://github.com/react-spring/react-spring) for the transitions
 
 You can view a live version [here](https://spring-table.netlify.com/) 
 
@@ -21,7 +22,7 @@ In the project directory, you can run:
 ### `yarn bootstrap`
 
 Runs a node programme which looks for a csv file at the root of the project called data.csv<br>
-Transforms the data into an array of arrays and writes it to a json file at src/Data/data.json
+Transforms the data into an array of arrays and writes it to a json file at src/Data/data.json<br>
 You must run this function if you make changes to the csv file or even use a new data set
 
 ### `yarn start`
