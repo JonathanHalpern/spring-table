@@ -11,7 +11,7 @@ const Row: FC<Props> = ({ rowData }) => (
         currently the th will not change its position in the array, so it is acceptable to use i as a key
         if a unique key is needed, then use the columns header
       */
-      <td style={{ minWidth: 110, textAlign: "center" }} key={i}>
+      <td style={{ width: 110, textAlign: "center" }} key={i}>
         {entry}
       </td>
     ))}

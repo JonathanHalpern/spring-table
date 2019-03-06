@@ -19,19 +19,21 @@ const sortCreator = (i: number) => (
 };
 
 const Table: FC<Props> = ({ data, sortTitle }) => {
-  const [headers, ...tableData] = data;
+  const [headers, ...tableBodyData] = data;
   let sortIndex = headers.indexOf(sortTitle);
   if (sortIndex === -1) sortIndex = 0;
-  const sortedData = tableData.slice().sort(sortCreator(sortIndex));
-  const totalElementsLength = sortedData.length;
+  const sortedTableBodyData = tableBodyData
+    .slice()
+    .sort(sortCreator(sortIndex));
+  const totalElementsLength = sortedTableBodyData.length;
 
   return (
     <table>
       <Headers headers={headers} totalElementsLength={totalElementsLength} />
-      {sortedData.map((rowData, i) => (
+      {sortedTableBodyData.map((rowData, index) => (
         <TableRow
           rowData={rowData}
-          index={i}
+          index={index}
           key={rowData.join("")}
           totalElementsLength={totalElementsLength}
         />

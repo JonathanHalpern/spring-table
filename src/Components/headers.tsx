@@ -16,7 +16,7 @@ const Headers: FC<Props> = ({ headers, totalElementsLength }) => (
     }}
   >
     {headers.map((header: string) => (
-      <th key={header} style={{ minWidth: 108 }}>
+      <th key={header} style={{ width: 108, minWidth: 108 }}>
         <Link
           to={header}
           style={{
