@@ -7,7 +7,7 @@ type Props = {
   sortTitle: string;
 };
 
-//should add unit test
+//this function should have a unit test
 const sortCreator = (i: number) => (
   a: ReadonlyArray<string>,
   b: ReadonlyArray<string>

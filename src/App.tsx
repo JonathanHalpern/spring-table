@@ -5,8 +5,6 @@ import cities from "./Data/cities.json";
 
 import { Table } from "./Containers";
 
-import "./App.css";
-
 class App extends Component {
   render() {
     return (
